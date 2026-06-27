@@ -1,0 +1,27 @@
+8. Roadmap Đề Xuất
+Milestone 1: Hardware foundation
+Sửa lifecycle audio.
+Hoàn thiện PMIC/battery API.
+Chuẩn hóa button event và power control.
+Tạo partition table cho OTA, NVS, assets và coredump.
+Milestone 2: Production architecture
+Tách app, services, ui, storage và platform.
+Thêm event-driven device services.
+Bổ sung error recovery, watchdog và logging policy.
+Milestone 3: Core smartwatch UI
+Watch face.
+Launcher/navigation.
+Settings, brightness, battery và time synchronization.
+Milestone 4: Power management
+Display sleep/AOD.
+Light/deep sleep.
+RTC/IMU/button wakeup.
+Battery charging và low-power policy.
+Milestone 5: Connectivity
+WiFi provisioning.
+BLE services.
+OTA update.
+Milestone 6: Audio/AI
+Audio pipeline ổn định.
+Voice UI.
+Chỉ tích hợp XiaoZhi AI sau khi power, connectivity và audio lifecycle hoàn chỉnh.

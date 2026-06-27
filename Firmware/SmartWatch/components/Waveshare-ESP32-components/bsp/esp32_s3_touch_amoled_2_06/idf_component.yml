@@ -1,0 +1,25 @@
+dependencies:
+  usb:
+    version: "^1.0.0"
+    public: true
+    rules:
+     - if: "idf_version >=6.0"
+  esp_codec_dev:
+    version: "~1.5"
+    public: true
+  espressif/esp_lcd_co5300: "^2.0.0"
+  esp_lcd_touch_ft3168:
+    override_path: "../../../esp_lcd_touch_ft3168"
+  espressif/esp_lvgl_port:
+    public: true
+    version: ^2
+  idf: '>=5.3'
+  lvgl/lvgl: '>=8,<10'
+  esp_lcd_panel_io_additions: "^1"
+description: Board Support Package (BSP) for Waveshare ESP32-S3-Touch-AMOLED-2.06
+tags:
+- bsp
+targets:
+- esp32s3
+url: https://www.waveshare.com/esp32-s3-touch-amoled-2.06.htm
+version: 2.0.0

@@ -1,0 +1,14 @@
+dependencies:
+  idf: "~6.0.1"
+  esp32_s3_touch_amoled_2_06:
+    override_path: "../Waveshare-ESP32-components/bsp/esp32_s3_touch_amoled_2_06"
+  qmi8658:
+    override_path: "../Waveshare-ESP32-components/sensor/qmi8658"
+  pcf85063a:
+    override_path: "../Waveshare-ESP32-components/sensor/pcf85063a"
+  cube32esp/xpowerslib: "^0.3.3"
+
+description: Hardware abstraction for the SmartWatch ESP32-S3 AMOLED board
+targets:
+  - esp32s3
+version: 0.1.0
