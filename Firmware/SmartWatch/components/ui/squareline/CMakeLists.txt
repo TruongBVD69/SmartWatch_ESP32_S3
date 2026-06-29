@@ -1,0 +1,15 @@
+SET(SOURCES screens/ui_WatchFace.c
+    screens/ui_Launcher.c
+    screens/ui_QuickSettings.c
+    screens/ui_Notification.c
+    screens/ui_Settings.c
+    screens/ui_XiaoZhi.c
+    screens/ui_Music.c
+    screens/ui_Recorder.c
+    screens/ui_About.c
+    screens/ui_Boot.c
+    ui.c
+    components/ui_comp_hook.c
+    ui_helpers.c)
+
+add_library(ui ${SOURCES})

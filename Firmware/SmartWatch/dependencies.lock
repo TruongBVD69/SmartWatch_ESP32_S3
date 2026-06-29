@@ -10,43 +10,15 @@ dependencies:
       type: service
     version: 0.3.3
   esp32_s3_touch_amoled_2_06:
-    dependencies:
-    - name: espressif/usb
-      public: true
-      rules:
-      - if: idf_version >=6.0
-      version: ^1.0.0
-    - name: espressif/esp_codec_dev
-      public: true
-      version: ~1.5
-    - name: espressif/esp_lcd_co5300
-      version: ^2.0.0
-    - name: esp_lcd_touch_ft3168
-      override_path: ../../../esp_lcd_touch_ft3168
-    - name: espressif/esp_lvgl_port
-      public: true
-      version: ^2
-    - name: idf
-      version: '>=5.3'
-    - name: lvgl/lvgl
-      version: '>=8,<10'
-    - name: espressif/esp_lcd_panel_io_additions
-      version: ^1
+    dependencies: []
     source:
-      path: components/Waveshare-ESP32-components/bsp/esp32_s3_touch_amoled_2_06
+      path: components/third_party/waveshare/bsp/esp32_s3_touch_amoled_2_06
       type: local
-    targets:
-    - esp32s3
     version: 2.0.0
   esp_lcd_touch_ft3168:
-    dependencies:
-    - name: espressif/esp_lcd_touch
-      public: true
-      version: ^1.2.0
-    - name: idf
-      version: '>=5.2'
+    dependencies: []
     source:
-      path: components/esp_lcd_touch_ft3168
+      path: components/third_party/esp_lcd_touch_ft3168
       type: local
     version: 1.0.0
   espressif/cmake_utilities:
@@ -164,28 +136,31 @@ dependencies:
       type: service
     version: 9.5.0
   pcf85063a:
-    dependencies:
-    - name: idf
-      version: '>=5.3.2'
+    dependencies: []
     source:
-      path: components/Waveshare-ESP32-components/sensor/pcf85063a
+      path: components/third_party/waveshare/sensor/pcf85063a
       type: local
     version: 2.0.0
   qmi8658:
-    dependencies:
-    - name: idf
-      version: '>=5.3.2'
+    dependencies: []
     source:
-      path: components/Waveshare-ESP32-components/sensor/qmi8658
+      path: components/third_party/waveshare/sensor/qmi8658
       type: local
     version: 2.0.0
 direct_dependencies:
 - cube32esp/xpowerslib
 - esp32_s3_touch_amoled_2_06
+- esp_lcd_touch_ft3168
+- espressif/esp_codec_dev
+- espressif/esp_lcd_co5300
+- espressif/esp_lcd_panel_io_additions
 - espressif/esp_lcd_touch
+- espressif/esp_lvgl_port
+- espressif/usb
 - idf
+- lvgl/lvgl
 - pcf85063a
 - qmi8658
-manifest_hash: 6b3a25825adaf2e524d5da4be56c72a28db19a1350673a9b64bc91d00eb744e2
+manifest_hash: f88b285538c35607925610e7f110edc9b8418ea59fffc9ffc6a9ad4361a72ade
 target: esp32s3
 version: 3.0.0
